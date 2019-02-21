@@ -7,6 +7,9 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800">
     <Grid>
-        
+        <Button Content="Receive order" HorizontalAlignment="Left" Margin="184,173,0,0" VerticalAlignment="Top" Width="91" Height="30" Click="Button_Click"/>
+        <Label Content="Indtast kundenr." HorizontalAlignment="Left" Margin="184,119,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="Textbox1" HorizontalAlignment="Left" Height="23" Margin="184,145,0,0" TextWrapping="Wrap" Text="" VerticalAlignment="Top" Width="120"/>
+
     </Grid>
 </Window>
