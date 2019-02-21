@@ -24,5 +24,6 @@ namespace Domain
             Town = town;
             Telephone = telephone;
         }
+
     }
 }
