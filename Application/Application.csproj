@@ -48,5 +48,11 @@
     <Compile Include="ProductRepo.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj">
+      <Project>{06cd33c7-73d2-4163-87cf-8f082e2e70f3}</Project>
+      <Name>Domain</Name>
+    </ProjectReference>
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

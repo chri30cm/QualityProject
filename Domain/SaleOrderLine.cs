@@ -8,11 +8,11 @@ namespace Domain
 {
     public class SaleOrderLine
     {
-		public string Product { get; set; }
+		public Product Product { get; set; }
 		public int Quantity { get; set; }
 		public int Price { get; set; }
 
-		public SaleOrderLine(string product, int quantity, int price)
+		public SaleOrderLine(Product product, int quantity, int price)
 		{
 			Product = product;
 			Quantity = quantity;

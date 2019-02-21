@@ -17,12 +17,13 @@ namespace Domain
 
         public void AddOrderLine(Product product, int quantity, int price)
         {
-
+            SaleOrderLine saleOrderLine = new SaleOrderLine(product, quantity, price);
+            orderlines.Add(saleOrderLine);
         }
 
         public void RemoveOrderLines(int index)
         {
-
+            orderlines.RemoveAt(index);
         }
 
         public List<SaleOrderLine> GetOrderLines()
