@@ -18,7 +18,5 @@ namespace Domain
 			Quantity = quantity;
 			Price = price; 
 		}
-			
-
 	}
 }
