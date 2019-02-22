@@ -8,5 +8,10 @@ namespace Application
 {
     public class Controller
     {
+        public void CheckCustomerID(int customerID)
+        {
+            CustomerRepo customerRepo = new CustomerRepo();
+            customerRepo.GetCustomer(customerID);
+        }
     }
 }

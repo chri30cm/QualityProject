@@ -12,6 +12,7 @@ using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Navigation;
 using System.Windows.Shapes;
+using Application;
 
 namespace UI
 {
@@ -20,6 +21,8 @@ namespace UI
     /// </summary>
     public partial class MainWindow : Window
     {
+        Controller control = new Controller();
+        
         public MainWindow()
         {
             InitializeComponent();
@@ -27,7 +30,10 @@ namespace UI
 
 		private void Button_Click(object sender, RoutedEventArgs e)
 		{
-			Textbox1.Text; 
+            control.CheckCustomerID(int.Parse(Textbox1.Text));
+            
+
+                
 		}
 
 		
