@@ -7,6 +7,14 @@
         mc:Ignorable="d"
         Title="NewCustomerWindow" Height="450" Width="800">
     <Grid>
-        
+        <Label Content="Register nyt kundenr." HorizontalAlignment="Left" Margin="209,76,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="TextboxName" HorizontalAlignment="Left"  Height="23" Margin="209,106,0,0" TextWrapping="Wrap" Text="Skriv navn her" VerticalAlignment="Top" Width="120" Foreground="#FF737373"/>
+        <Button Content="Register Kunde" HorizontalAlignment="Left" Margin="209,246,0,0" VerticalAlignment="Top" Width="100"/>
+        <TextBox x:Name="TextboxAddress" HorizontalAlignment="Left"  Height="23" Margin="209,134,0,0" TextWrapping="Wrap" Text="Skriv addresse her" VerticalAlignment="Top" Width="120" Foreground="#FF737373"/>
+        <TextBox x:Name="TextboxZIP" HorizontalAlignment="Left"  Height="23" Margin="209,162,0,0" TextWrapping="Wrap" Text="Skriv ZIP her" VerticalAlignment="Top" Width="120" Foreground="#FF737373"/>
+        <TextBox x:Name="TextboxPhone" HorizontalAlignment="Left"  Height="23" Margin="209,218,0,0" TextWrapping="Wrap" Text="Skriv Tlf nr. her" VerticalAlignment="Top" Width="120" Foreground="#FF737373"/>
+        <TextBox x:Name="TextboxCity" HorizontalAlignment="Left"  Height="23" Margin="209,190,0,0" TextWrapping="Wrap" Text="Skriv by her" VerticalAlignment="Top" Width="120" Foreground="#FF737373"/>
+
+
     </Grid>
 </Window>
