@@ -11,6 +11,7 @@ using System.Windows.Input;
 using System.Windows.Media;
 using System.Windows.Media.Imaging;
 using System.Windows.Shapes;
+using Application;
 
 namespace UI
 {
@@ -19,11 +20,24 @@ namespace UI
     /// </summary>
     public partial class NewCustomerWindow : Window
     {
+        Controller control = new Controller();
+
         public NewCustomerWindow()
         {
             InitializeComponent();
         }
 
-		
-	}
+        private void Button_Click(object sender, RoutedEventArgs e)
+        {
+            int Id = control.GetCountOfCustomers() + 1;
+            control.CreateCustomer(Id, TextboxName.Text, TextboxAddress.Text, TextboxZIP.Text, TextboxCity.Text, TextboxPhone.Text);
+        }
+
+        private void button_Back_Click(object sender, RoutedEventArgs e)
+        {
+            MainWindow main = new MainWindow();
+            main.Show();
+            this.Close();
+        }
+    }
 }

@@ -15,6 +15,7 @@ namespace Application
         {
             customerList.Add(customer);
         }
+       
 
         public Customer GetCustomer(int customerId)
         {
@@ -27,6 +28,10 @@ namespace Application
                 }
             }
             return tempCustomer;
+        }
+        public int GetCountOfCustommers()
+        {
+            return customerList.Count();
         }
     }
 }

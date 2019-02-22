@@ -33,16 +33,19 @@ namespace UI
 
 		private void Button_Click(object sender, RoutedEventArgs e)
 		{
+          
             try
             {
                 if (control.CheckCustomerID(int.Parse(Textbox1.Text)) == true)
                 {
-                    orderwin.Show();
                     
+                    orderwin.Show();
+                    this.Close();
                 }
                 else
                 {
                     customerwin.Show();
+                    this.Close();
                 }
             }
             catch (Exception)
@@ -56,9 +59,6 @@ namespace UI
                 
 		}
 
-		private void TextBox_TextChanged(object sender, TextChangedEventArgs e)
-		{
-
-		}
+		
 	}
 }
