@@ -14,6 +14,7 @@ using System.Windows.Navigation;
 using System.Windows.Shapes;
 using Application;
 
+
 namespace UI
 {
     /// <summary>
@@ -21,6 +22,8 @@ namespace UI
     /// </summary>
     public partial class MainWindow : Window
     {
+        NewOrderWindow orderwin = new NewOrderWindow();
+        NewCustomerWindow customerwin = new NewCustomerWindow();
         Controller control = new Controller();
         
         public MainWindow()
@@ -30,7 +33,24 @@ namespace UI
 
 		private void Button_Click(object sender, RoutedEventArgs e)
 		{
-            control.CheckCustomerID(int.Parse(Textbox1.Text));
+            try
+            {
+                if (control.CheckCustomerID(int.Parse(Textbox1.Text)) == true)
+                {
+                    orderwin.Show();
+                    
+                }
+                else
+                {
+                    customerwin.Show();
+                }
+            }
+            catch (Exception)
+            {
+                MessageBox.Show("Hov hov, du skal skrive et tal brormand");
+            }
+          
+            
             
 
                 

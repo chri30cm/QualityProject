@@ -8,10 +8,19 @@ namespace Application
 {
     public class Controller
     {
-        public void CheckCustomerID(int customerID)
+        public bool CheckCustomerID(int customerID)
         {
             CustomerRepo customerRepo = new CustomerRepo();
-            customerRepo.GetCustomer(customerID);
+            if (customerRepo.GetCustomer(customerID) == null)
+            {
+                return false;
+            }
+            else
+            {
+                return true;
+            }
+            
+
         }
     }
 }
